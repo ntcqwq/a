@@ -1,5 +1,6 @@
 from botocore.exceptions import ClientError
-import os, sys, glob, boto3, json, util, pandas as pd
+import os, sys, glob, boto3, json, pandas as pd, datetime
+import util
 
 def load_activities(file_paths: list) -> list:
     result = []
@@ -8,14 +9,30 @@ def load_activities(file_paths: list) -> list:
             result.append(file.read().split('\n'))
     return result
 
-# add existing commitments to prompt?
-# Existing commitments:
-# [[existing_task1, existing_start1, existing_end1], [existing_task2, existing_start2, existing_end2] ... and so on]
+def split_into_chunks(tasks: list, chunk_size: int) -> list:
+    """Divides the tasks list into smaller chunks of a specified size."""
+    for i in range(0, len(tasks), chunk_size):
+        yield tasks[i:i + chunk_size]
+
+def invoke_model_in_chunks(client, model_id, prompt_template, tasks, chunk_size):
+    all_scheduled_tasks = []
+    
+    # Break down tasks into smaller chunks
+    for chunk in split_into_chunks(tasks, chunk_size):
+        # Prepare chunk prompt
+        chunk_prompt = prompt_template + str(chunk)
+        
+        # Invoke the model for each chunk
+        ret = util.invoke_model(client, model_id, chunk_prompt)
+        
+        # Evaluate and collect the response
+        chunk_tasks = eval(ret)
+        all_scheduled_tasks.extend(chunk_tasks)
+
+    return all_scheduled_tasks
 
 client = boto3.client('bedrock-runtime')
 model_id = "meta.llama3-70b-instruct-v1:0"
-op = "/Users/ssnipro/kitchen/a/output.txt"
-
 prompt_template = """You are an AI assistant helping me manage my time by scheduling tasks into my calendar. I will provide you with a list of tasks along with their predicted durations. Your job is to assign viable timeframes for each task based on the following guidelines:
 
 Output Format: For each task, provide:
@@ -41,59 +58,27 @@ Scheduling Constraints:
 
 Here is the list of tasks with their predicted durations:
 
-[[prompt1, duration1 (in hours)], [prompt2, duration2 (in hours)]...and so on]
-
-Please provide the schedule in a clear and organized manner.
-
-Example Input:
-
-[["Write project report", "2"], ["Team meeting", "1"], ["Code review", "1.5"]]
-
-Example Output:
-
-[
-    {"description": "Team meeting", "start": "2023-10-05 09:00 AM", "end": "2023-10-05 11:00 AM",
-    {"description": "Write project report", "start": "2023-10-05 10:15 AM", "end": "2023-10-05 11:15 PM"},
-    ... (for each task)
-]
-
-Attached below are my actual tasks.
-
 """
 
 if __name__ == "__main__":
-    conversation = []
     file_paths = sorted(glob.glob("/Users/ssnipro/kitchen/a/activityData/*.txt"))
-    chunked_paths = [file_paths[i:i+10] for i in range(0, len(file_paths), 10)]
-    tasks = []
-    for i, chunk in enumerate(chunked_paths):
-        result = load_activities(chunk)
-        conversation.append({
-            "role": "user",
-            "content": [{"text": (prompt_template if i == 0 else "")+str(result)}]
-        }) 
-        try:
-            response = client.converse(
-                modelId=model_id,
-                messages=conversation,
-                inferenceConfig={"maxTokens":2048,"temperature":0.5,"topP":0.9},
-                additionalModelRequestFields={}
-            )
-            response_text = response["output"]["message"]["content"][0]["text"]
-            conversation.append({
-                "role": "assistant",
-                "content": [{"text": response_text}]
-            })
-            tasks = tasks+eval(response_text)
-        except (ClientError, Exception) as e:
-            util.write(op, f"ERROR: Can't invoke '{model_id}'. Reason: {e}")
-            exit(1)
-    df = pd.DataFrame(tasks)
+    
+    # Load activities from files
+    tasks = load_activities(file_paths)
+
+    # Define the chunk size based on how many tasks you estimate would fit under the token limit
+    chunk_size = 10  # Adjust this based on the size of tasks and token limits
+
+    # Invoke model with chunked tasks
+    all_scheduled_tasks = invoke_model_in_chunks(client, model_id, prompt_template, tasks, chunk_size)
+
+    # Process the result into a pandas DataFrame
+    df = pd.DataFrame(all_scheduled_tasks)
     df['start'] = pd.to_datetime(df['start'])
     df['end'] = pd.to_datetime(df['end'])
     df = df.sort_values(by='start')
-    util.wipe(op)
-    for i, r in df.iterrows():
-        util.write(op, f"{r['start']} - {r['end']}: {r['description']}\n", False)
 
-# ERROR: Can't invoke 'meta.llama3-70b-instruct-v1:0'. Reason: An error occurred (ValidationException) when calling the InvokeModel operation: Malformed input request: #/max_gen_len: 16384 is not less or equal to 2048, please reformat your input and try again.
+    # Write the output to a file
+    util.wipe("/Users/ssnipro/kitchen/a/output.txt")
+    for i, r in df.iterrows():
+        util.write("/Users/ssnipro/kitchen/a/output.txt", f"{r['start']} - {r['end']}: {r['description']}\n", False)

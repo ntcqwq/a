@@ -1,0 +1,214 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Your Organization//Your Product//EN
+BEGIN:VEVENT
+UID:cb9b68f6-4af8-48f5-8220-583024407ef7@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231005T080000
+DTEND:20231005T100000
+SUMMARY:I will be doing my math homework\, containing 7 different questions on prove by induction\, with different quesiton types.
+END:VEVENT
+BEGIN:VEVENT
+UID:bb2fe2d6-6f3f-4029-9e78-93d9a503fd75@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231005T100000
+DTEND:20231005T170000
+SUMMARY:I will be driving from Montreal to Toronto by car\, stopping for two breaks in between to grab food on the onroutes.
+END:VEVENT
+BEGIN:VEVENT
+UID:feaa5b2e-4f43-420e-b4db-29aa6c812c0b@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231005T173000
+DTEND:20231005T190000
+SUMMARY:I will be going to my local grocery store\, 123 Maple Street\, to buy ingredients for a homemade lasagna\, including pasta sheets\, ground beef\, tomatoes\, and cheese. After shopping\, I’ll drive back home to 45 King Street\, Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:6f4048da-1d4c-4438-ba2a-2711c67c9915@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231005T193000
+DTEND:20231005T220000
+SUMMARY:I’m currently at my home office at 45 King Street\, Toronto. I will be preparing a 20-slide presentation for a client about the benefits of renewable energy. This involves research and designing slides in PowerPoint.
+END:VEVENT
+BEGIN:VEVENT
+UID:6bf1f71f-0f10-4b4d-8656-07cbe0d86897@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231006T080000
+DTEND:20231006T094500
+SUMMARY:I will be heading to the GoodLife gym at 432 Yonge Street for a workout session\, focusing on upper body exercises\, and then taking a 15-minute sauna before driving back home to 45 King Street\, Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:debe793f-ac04-4d19-bdbb-79ef932c040e@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231006T100000
+DTEND:20231006T110000
+SUMMARY:I'm at Starbucks\, 12 Bloor Street\, enjoying a latte. I’ll spend time reviewing emails from my team about a new marketing campaign\, replying with feedback and suggestions on the proposed strategies before heading back to 45 King Street\, Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:388275b3-50f8-4eeb-bb69-a43c52a504cd@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231006T113000
+DTEND:20231006T143000
+SUMMARY:I'm going to Ikea\, located at 25 Provost Drive\, to buy furniture for my new apartment. I'll need to get a bed frame\, a dining table\, and some chairs. After shopping\, I will drive back to 45 King Street\, Toronto\, and unload everything.
+END:VEVENT
+BEGIN:VEVENT
+UID:baa12f8d-82bc-4530-9eb9-3b0ac68181e0@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231006T150000
+DTEND:20231006T173000
+SUMMARY:I am at the AGO (Art Gallery of Ontario)\, located at 317 Dundas St W\, Toronto. I will spend the afternoon exploring the new contemporary art exhibit and taking notes for a review I need to write before heading back to 45 King Street\, Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:c0453047-60f9-41c1-be1a-e3bd8865248a@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231006T180000
+DTEND:20231006T192500
+SUMMARY:I will drive from my apartment at 45 King Street\, Toronto\, to Pearson International Airport to pick up my friend who is arriving from Vancouver. I’ll wait for them at the arrivals gate and help them with their luggage before driving back to 45 King Street\, Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:1fa13c06-3692-46ea-a884-4a60d8297eea@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231006T193000
+DTEND:20231006T190000
+SUMMARY:I am at my apartment at 45 King Street\, Toronto. I will be hosting a dinner party for 4 guests\, and I need to clean the living room\, cook a three-course meal\, and set the table before they arrive at 7 PM.
+END:VEVENT
+BEGIN:VEVENT
+UID:a9ff0a9e-ba3b-4d07-ab66-4025649db559@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231007T080000
+DTEND:20231007T090000
+SUMMARY:I'm in downtown Toronto\, and I need to visit the Canada Post office at 700 Hamilton St to send an important package\, and then stop by the nearby pharmacy to pick up a prescription before driving back to 45 King Street\, Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:bc802cde-7c25-41c7-a8f7-d48ab0168d51@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231007T093000
+DTEND:20231007T100300
+SUMMARY:I will be eating a Dave's Single Burger from a Wendy's in Kirkland\, Montreal. I will not be waiting in line and I will be 100% focused on eating the burger.
+END:VEVENT
+BEGIN:VEVENT
+UID:fe1c4da8-dd3a-4905-bf09-e85bdfcc378d@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231007T103000
+DTEND:20231007T133000
+SUMMARY:I will be at the beach at Woodbine Park\, Toronto\, spending the afternoon relaxing in the sun\, swimming\, and reading a novel while enjoying some snacks I’ve packed before driving back to 45 King Street\, Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:431dba75-8e01-4a30-aeec-18f31043aac9@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231007T140000
+DTEND:20231007T153000
+SUMMARY:I am going to the nearest Apple Store\, located at 220 Yonge Street\, Toronto\, to get my iPhone fixed after its screen cracked. I will wait in-store for the repair to be completed before returning home to 45 King Street\, Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:6ecefb82-8da3-4762-90b6-605f5cacd17c@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231007T180000
+DTEND:20231007T203000
+SUMMARY:I will be attending a movie premiere at Scotiabank Theatre\, 259 Richmond St W\, Toronto. After watching the film\, I’ll grab a late-night snack at the nearby diner before returning home to 45 King Street\, Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:2a07a359-ef73-413b-9893-595535a29c6a@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231008T080000
+DTEND:20231008T093000
+SUMMARY:I will drive from my office at 120 Front Street to my dentist’s office at 455 Richmond Street for a routine check-up and teeth cleaning. After the appointment\, I’ll head back to 45 King Street\, Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:d8472b73-5801-401b-9689-a32354511141@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231008T100000
+DTEND:20231008T123000
+SUMMARY:I will be in my kitchen at 45 King Street\, Toronto\, baking a birthday cake for my friend\, which includes making the batter\, baking it in the oven\, and then decorating it with frosting and sprinkles.
+END:VEVENT
+BEGIN:VEVENT
+UID:24bf9b0a-a795-41f1-8db5-eebae2848a0f@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231008T130000
+DTEND:20231008T170000
+SUMMARY:I am currently working from my home office at 45 King Street\, Toronto. I will write a 3\,000-word article for a tech blog\, covering the latest AI trends and technologies\, then proofread it for errors before submitting.
+END:VEVENT
+BEGIN:VEVENT
+UID:bc54286b-e7dd-4896-9b53-cd6f3e0f2740@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231008T173000
+DTEND:20231008T203000
+SUMMARY:I’m at my apartment at 45 King Street\, Toronto. I need to spend the afternoon assembling a new desk I purchased online\, followed by organizing my workspace and setting up my computer and peripherals.
+END:VEVENT
+BEGIN:VEVENT
+UID:7267554a-f0d1-49e9-bddb-699e42bb1c9d@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231008T210000
+DTEND:20231008T230000
+SUMMARY:I’m currently in my bedroom at 45 King Street\, Toronto. I’ll clean the entire room\, vacuuming the floor\, dusting surfaces\, and organizing my wardrobe and desk before tidying up the rest of the house.
+END:VEVENT
+BEGIN:VEVENT
+UID:f890f93e-b6d3-4ba4-852b-be44ad74cd4f@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231009T080000
+DTEND:20231009T110000
+SUMMARY:I’m in Ottawa\, about to drive from Parliament Hill to Gatineau Park\, where I will hike a trail that’s approximately 5 kilometers long. I’ll take my time enjoying the scenery before returning home to 45 King Street\, Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:c2a085a7-7970-46ab-afe1-69c22e70b04a@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231009T113000
+DTEND:20231009T133000
+SUMMARY:I am at my apartment at 45 King Street\, Toronto\, and I will drive to my local Best Buy at 209 Chain Lake Drive to pick up a new TV. Once back home\, I’ll unbox it and set it up in my living room at 45 King Street\, Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:688f71f2-424e-4c6a-b80d-5447ffaffd32@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231009T140000
+DTEND:20231009T141200
+SUMMARY:I am current at the Royal Ontario Museum\, 100 Queens Park\, Toronto\, ON M5S 2C6 in Toronto. I am going to drive to the Casa Loma\, 1 Austin Terrace\, Toronto\, ON M5R 1X8 in Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:fb948fd8-47fb-4b7e-89ea-7f849ea761c2@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231009T150000
+DTEND:20231009T200000
+SUMMARY:I am currently at 45 King Street\, Toronto\, waiting for an Uber to take me to Union Station in Toronto\, where I will catch a train to Niagara Falls for a day trip\, spending time at the falls and nearby attractions before returning home to 45 King Street\, Toronto.
+END:VEVENT
+BEGIN:VEVENT
+UID:24e3d01f-6bdf-4c42-b852-560bac2f244e@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231010T080000
+DTEND:20231010T120000
+SUMMARY:I live at Victoria Park and Finch. I'm going to home depot in Markham to buy stuff for bedroom renovation. The stuff I need to buy will be for wall repainting and re-flooring. The bedroom is 50 sq ft. I'll be driving there after work.
+END:VEVENT
+BEGIN:VEVENT
+UID:db7af7c0-bb1a-405b-8e17-854141a6958d@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231010T123000
+DTEND:20231010T131500
+SUMMARY:I will be playing one game of VALORANT
+END:VEVENT
+BEGIN:VEVENT
+UID:d568a8a4-a43f-4718-92d2-b0443d6ef077@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231010T140000
+DTEND:20231010T153000
+SUMMARY:I will be playing a soccer game representing the UCC Varsity Soccer Team against Appleby College
+END:VEVENT
+BEGIN:VEVENT
+UID:04a5cb35-101d-466c-84cf-e2ceea5a2630@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231010T160000
+DTEND:20231010T164500
+SUMMARY:I will be meeting with my university counselor. We will be talking about options for universities in the United States\, as well as some potential extracurricular options
+END:VEVENT
+BEGIN:VEVENT
+UID:9a2dd3d4-b34c-4934-ba4a-a944c316bd1e@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231010T170000
+DTEND:20231010T180000
+SUMMARY:I will be writing very short sustainability speech (around 5 minutes) to reflect on David Suzuki's play "What you won't do for love"\, to present in front of my whole school. It will contain a short list of thoughts I had after watching the play.
+END:VEVENT
+BEGIN:VEVENT
+UID:140fcd8c-6e42-4b3a-ac01-677b4022fb81@yourdomain.com
+DTSTAMP:20241012T003007Z
+DTSTART:20231010T183000
+DTEND:20231010T190800
+SUMMARY:I will be watching a video on Square Root Decomposition (Mo's Algorithm).
+END:VEVENT
+END:VCALENDAR
